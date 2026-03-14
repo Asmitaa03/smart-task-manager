@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Task Manager — Login</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- IMPORTANT: absolute path under /css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="bg-space bg-space-1">
+<div class="app-shell">
+    <header class="topbar">
+        <div class="brand">Smart Task Manager</div>
+        <div class="user-area"><a class="cta" href="/register.html">Create account</a></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-card">
+            <h2>Welcome back</h2>
+            <p class="small">Sign in to manage your tasks. Beautiful, quick and simple.</p>
+
+            <div class="center-card" style="margin-top:12px">
+                <form id="loginForm">
+                    <input id="email" type="email" placeholder="Email" required />
+                    <input id="password" type="password" placeholder="Password" required />
+                    <button class="primary" type="submit">Sign in</button>
+                </form>
+                <div id="loginMsg" class="small" style="margin-top:10px;color:crimson"></div>
+            </div>
+        </div>
+
+        <!-- hero image uses uploaded file path (will be transformed as a URL) -->
+        <div class="hero-image" style="background-image: url('/mnt/data/Screenshot 2025-11-22 211052.png');"></div>
+    </section>
+</div>
+
+<!-- IMPORTANT: absolute path under /js -->
+<script src="/js/auth.js"></script>
+<script src="/js/global.js"></script>
+
+</body>
+</html>
+

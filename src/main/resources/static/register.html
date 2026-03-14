@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Task Manager — Register</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="bg-space bg-space-2">
+<div class="app-shell">
+    <header class="topbar">
+        <div class="brand">Smart Task Manager</div>
+        <div class="user-area"><a class="cta" href="/">Already have an account?</a></div>
+    </header>
+
+    <section style="padding:28px 48px;">
+        <div class="center-card" style="max-width:700px;margin:0 auto">
+            <h2>Create your account</h2>
+            <p class="small">Register as a user or admin for demo purposes.</p>
+
+            <form id="registerForm" style="margin-top:12px">
+                <input id="name" type="text" placeholder="Full name" required />
+                <input id="email" type="email" placeholder="Email" required />
+                <input id="password" type="password" placeholder="Password" required />
+                <select id="role">
+                    <option value="USER">User</option>
+                    <option value="ADMIN">Admin</option>
+                </select>
+                <button class="primary" type="submit">Create account</button>
+            </form>
+
+            <div id="registerMsg" class="small" style="margin-top:10px"></div>
+        </div>
+    </section>
+</div>
+
+<script src="/js/auth.js"></script>
+<script src="/js/global.js"></script>
+
+</body>
+</html>
+
+
